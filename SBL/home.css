@@ -1,0 +1,42 @@
+body {
+  background-color: #dbb7ff;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+}
+
+.ima_cal {
+  width: 50%; 
+}
+
+.ima_cal svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 50%; 
+  padding: 0 20px; 
+}
+
+.text-container h1,
+.text-container p {
+  text-align: center;
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
